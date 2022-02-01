@@ -373,10 +373,10 @@
   };
 
   window[pluginName].defaults = {
-    minSpeedX: 0.3,
-    maxSpeedX: 0.9,
-    minSpeedY: 0.3,
-    maxSpeedY: 0.9,
+    minSpeedX: 0.5,
+    maxSpeedX: 1,
+    minSpeedY: 0.5,
+    maxSpeedY: 1,
     directionX: 'center', // 'center', 'left' or 'right'. 'center' = dots bounce off edges
     directionY: 'center', // 'center', 'up' or 'down'. 'center' = dots bounce off edges
     density: 8000, // How many particles will be generated: one particle every n pixels
