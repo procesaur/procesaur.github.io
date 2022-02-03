@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     lineColor: '#f93800aa'*/
 	dotColor: '#f33800',
 	lineColor: '#f33800',
-	particleRadius: 11, // Dot size
+	particleRadius: 6, // Dot size
     lineWidth: 2,
     curvedLines: true,
     proximity: 90, // How close two dots need to be before they join
