@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
   particleground(document.getElementById('particles'), {
     /*dotColor: '#f93800',
     lineColor: '#f93800aa'*/
-	dotColor: '#f33800',
-	lineColor: '#f33800',
+	dotColor: '#f3380052',
+	lineColor: '#f3380052',
 	particleRadius: 6, // Dot size
     lineWidth: 2,
     curvedLines: true,
