@@ -61,11 +61,12 @@ html, body {
 }
 
 body {
-	   background: #fff;
-  background: #f33800e4;
+	   background: #fffff0;
 
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
+
+  color: #f33800e4;
+    color: #000;
   line-height: 1.3;
   -webkit-font-smoothing: antialiased;
 }
@@ -81,13 +82,14 @@ body:before{
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.015;
+  opacity: 0.25;
 }
 
-#particles {
-  width: 100%;
-  height: 100%;
+#particles, #particlesx {
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
+  position: fixed;
 }
 
 #intro {
@@ -108,7 +110,7 @@ h1::after {
   content: '';
   width: 220px;
   display: block;
-  background: #fff;
+  background: #f33800e4;
   height: 5px;
   margin: 10px auto;
   line-height: 1.1;

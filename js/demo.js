@@ -7,23 +7,45 @@ document.addEventListener('DOMContentLoaded', function () {
   particleground(document.getElementById('particles'), {
     /*dotColor: '#f93800',
     lineColor: '#f93800aa'*/
-	dotColor: '#f3380052',
-	lineColor: '#f3380052',
+	dotColor: '#005b9629',
+	lineColor:  '#005b9629',
 	particleRadius: 6, // Dot size
-    lineWidth: 2,
+    lineWidth: 3,
     curvedLines: true,
     proximity: 90, // How close two dots need to be before they join
     parallax: false,
     parallaxMultiplier: 20, 
-	density: 8000,
+	density: 10000,
 	minSpeedX: 0.0,
     maxSpeedX: 0.2,
     minSpeedY: 0.0,
     maxSpeedY: 0.2
   });
+  
+    particleground(document.getElementById('particlesx'), {
+    /*dotColor: '#f93800',
+    lineColor: '#f93800aa'*/
+	dotColor: '#fe4a4922',
+	lineColor: '#fe4a4922',
+	particleRadius: 6, // Dot size
+    lineWidth: 3,
+    curvedLines: true,
+    proximity: 90, // How close two dots need to be before they join
+    parallax: false,
+    parallaxMultiplier: 20, 
+	density: 10000,
+	minSpeedX: 0.0,
+    maxSpeedX: 0.2,
+    minSpeedY: 0.0,
+    maxSpeedY: 0.2
+  });
+  
+
+  
   var intro = document.getElementById('intro');
   intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
 }, false);
+
 
 
 /*
