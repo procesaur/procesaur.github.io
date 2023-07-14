@@ -1,7 +1,5 @@
-import data from './data.json';
-
 document.addEventListener("DOMContentLoaded", () => {
-
+	fetch("data.json").then(data => response.json())
 	
 	var x = JSON.parse(data);
 
