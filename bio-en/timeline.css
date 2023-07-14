@@ -1,0 +1,59 @@
+.events li { 
+  display: flex; 
+  color: #3d3636;
+}
+
+.events li:first-of-type > time:after { 
+background: #1072ef;
+}
+
+.events li:first-of-type > span { 
+color: #1072ef
+}
+
+.events time { 
+  position: relative;
+  padding: 0.2em 1.5em; 
+	    white-space: nowrap;
+  }
+
+.events time::after { 
+   content: "";
+   position: absolute;
+   z-index: 2;
+   right: 0;
+   top: 0;
+   transform: translateX(50%);
+   border-radius: 50%;
+   background: #fff;
+   border: 1px #ccc solid;
+   width: 1.6em;
+   height: 1.6em;
+   background: url('https://rgf.bg.ac.rs/slike/Rgf-logo.jpg')  0 0 no-repeat;;
+
+}
+
+
+.events span {
+  padding: 0 1.5em 1.5em 1.5em;
+  position: relative;
+}
+
+.events span::before {
+   content: "";
+   position: absolute;
+   z-index: 1;
+   left: 0;
+   height: 100%;
+   border-left: 1px #ccc solid;
+}
+
+.events strong {
+   display: block;
+   font-weight: bolder;
+}
+
+.events { margin: 0em; width: 100%; padding:10px }
+.events, 
+.events *::before, 
+.events *::after { box-sizing: border-box; font-family: arial; }
