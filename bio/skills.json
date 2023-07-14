@@ -1,0 +1,74 @@
+[
+  {
+  "name": "",
+  "parent": "null",
+  "children": [
+    {
+      "name": "Obrada prirodnog jezika",
+	  "children": [    {
+		  "name": "Modelovanje jezika",
+		  "children": []
+		},
+		{
+		  "name": "Pretprocesiranje teksta",
+		  "children": []
+		},
+		{
+		  "name": "Srpski jezik",
+		  "children": []
+		},  
+		{
+		  "name": "Ekstrakcija informacija",
+		  "children": []
+		},
+		{
+		  "name": "Obeležavanje i klasifikacija",
+		  "children": []
+		}
+	]
+    },
+	{
+			  "name": "Inteligentni sistemi",
+			  "children": [
+				{
+				  "name": "Podatkologija",
+				  "children": []
+				},
+				{
+				  "name": "Mašinsko učenje (pyTorch)",
+				  "children": []
+				},
+				{
+				  "name": "Primenjeni sistemi",
+				  "children": []
+				}
+			  ]
+			},
+	
+	{
+      "name": "Softversko inženjerstvo",
+	  "children": [
+			{
+			  "name": "Full-Stack i Desktop",
+			  "children": []
+			}
+	  
+	  ]
+    },
+    {
+      "name": "Nauka",
+	  "children": [
+	  		{
+			  "name": "Veštačka inteligencija",
+			  "children": []
+			},
+			{
+			  "name": "Paralelni sistemi",
+			  "children": []
+			}
+	
+	  ]
+    }
+  ]
+}
+]

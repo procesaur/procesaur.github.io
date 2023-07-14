@@ -115,7 +115,7 @@ body {
 	flex-wrap: wrap;
 	width: 50%;
 	font-size:11pt;
-	border: 5px solid #ff942b;
+	border-left: 6px solid #ff942b;
 	border-radius: 40pt;
 	margin:1pt;
 
@@ -148,3 +148,17 @@ margin-left:10pt
 .section.double{
 	width:100%
 }
+
+	.node circle {
+	  fill: #fff;
+	  stroke: #1072ef;
+	  stroke-width: 3px;
+	}
+
+	.node text { font: 13px sans-serif; }
+
+	.link {
+	  fill: none;
+	  stroke: #cccccc3d;
+	  stroke-width: 6px;
+	}

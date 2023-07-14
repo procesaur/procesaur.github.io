@@ -4,10 +4,14 @@
 		<link rel="stylesheet" href="paper.css">
 		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="timeline.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+		
 		<script type="text/javascript" src="main.js"></script>
 	</head>
 	<body>
+	
 		<div class="paper-shadow">
+		
 			<div class="header">
 				<div class="title">
 					<span>
@@ -23,15 +27,16 @@
 				</div>
 
 			</div>
-			<div class="highlight" id="highlight">
-			</div>
+			<script type="text/javascript" src="skills.js"></script>
+			<div id="forskills"></div>
 			<div class="content">
 				<div id="work" class="section"></div>
 				<div id="education" class="section"></div>
 			</div>
+			
 			<div class="content">
 				<div id="projects" class="section"></div>
-				<div id="publications" class="section double"></div>
+				<!--div id="publications" class="section double"></div-->
 			</div>
 		</div>
 
