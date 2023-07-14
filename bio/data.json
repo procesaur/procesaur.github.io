@@ -1,0 +1,126 @@
+{
+  "name": "Mihailo Škorić",
+  "brief": [
+    "Calm problem solving",
+    "Custom NLP resources",
+    "Creative AI tools"
+  ],
+  "mails": [
+    "procesaur@gmail.com 📧",
+    "mihailo.skoric@rgf.bg.ac.rs 📧"
+  ],
+  "links": [
+    "linkedin.com/in/mihailos 🔗",
+    "github.com/procesaur 👨‍💻",
+    "huggingface.co/procesaur 🤗"
+  ],
+  "highlight": [
+    "Obrada prirodnog jezika i Jezički modeli",
+    "Veštačka inteligencija i Razvoj softvera",
+    "Podatkologija i Informacione nauke"
+  ],
+  "work": {
+    "title": "Radno iskustvo",
+    "places": [
+      {
+        "pname": "Rudarsko-geološki fakultet",
+        "logo": "https://rgf.bg.ac.rs/slike/Rgf-logo.jpg",
+        "positions": [
+          {
+            "time": "2018-sada",
+            "position": "Softver Inženjer",
+            "desc": "Računarski centar"
+          },
+          {
+            "time": "2019-2021",
+            "position": "Projektant informatičke infrastrukture",
+            "desc": "Računarski centar"
+          },
+          {
+            "time": "2017-2019",
+            "position": "Sistem Inženjer",
+            "desc": "Računarski centar"
+          }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Formalno obrazovanje",
+    "places": [
+      {
+        "pname": "Univerzitet u Beogradu",
+        "logo": "https://www.bg.ac.rs/images/logo/ub/stit/[UB]Stit.jpg",
+        "diplomas": [
+          {
+            "time": "2016-2023",
+            "title": "Doktor nauka - Inteligentni sistemi",
+            "desc": "Primene veštačke inteligencije"
+          },
+          {
+            "time": "2015-2016",
+            "title": "Master profesor jezika i književnosti",
+            "desc": "Bibliotekarstvo i informatika"
+          },
+          {
+            "time": "2011-2015",
+            "title": "Diplomirani profesor jezika i književnosti",
+            "desc": "Bibliotekarstvo i informatika"
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Međunarodni projekti",
+    "places": [
+      {
+        "pname": "",
+        "logo": "",
+        "projects": [
+          {
+            "time": "2023-sada",
+            "title": "Multi3Generation",
+            "desc": "COST Action CA18231"
+          },
+          {
+            "time": "2018-2022",
+            "title": "Distant Reading for European Literary History",
+            "desc": "COST Action CA16204"
+          }
+        ]
+      }
+    ]
+  },
+  "publications": {
+    "title": "Najznačajnije publikacije",
+    "places": [
+      {
+        "pname": "",
+        "logo": "",
+        "publications": [
+          {
+            "time": "2022",
+            "title": "Parallel Stylometric Document Embeddings with Deep Learning Based Language Models in Literary Authorship Attribution",
+            "desc": "Mathematics"
+          },
+          {
+            "time": "2022",
+            "title": "Parallel Stylometric Document Embeddings with Deep Learning Based Language Models in Literary Authorship Attribution",
+            "desc": "Applied Sciences"
+          },
+          {
+            "time": "2022",
+            "title": "Machine Learning and Deep Neural Network-Based Lemmatization and Morphosyntactic Tagging for Serbian",
+            "desc": "LREC"
+          },
+          {
+            "time": "2022",
+            "title": "Classification of Terms on a Positive-Negative Feelings Polarity Scale Based on Emoticons",
+            "desc": "Infotheca"
+          }
+        ]
+      }
+    ]
+  }
+}
