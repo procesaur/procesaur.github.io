@@ -168,13 +168,21 @@ p {
     left: 0;
     z-index: -100;
     width: 100%;
+	
+}
+
+svg{
+	filter:sepia(1)
 }
 
 .ico {
     z-index: 100;
-	padding:10px;
-	    text-decoration: none;
-    color: black;
+	padding: 5px 0px;
+	text-decoration: none;
+  
+	border-radius:10%;
+	margin:10px;
+	
 }
 
 
@@ -184,7 +192,7 @@ p {
 
 .ico img{
 	width:100px;
-
+	border-radius:20%;
 	
 	padding:0px 10px;
 	cursor:pointer
@@ -196,6 +204,8 @@ p {
     padding: 0px 10px;
     align-content: stretch;
     justify-content: space-around;
+	text-shadow: 1px 1px #ffffff;
+	color: black;
 }
 
 	

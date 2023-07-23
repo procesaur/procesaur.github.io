@@ -1,56 +1,51 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <title>demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" />
-  <!--script type='text/javascript' src='./jquery.particleground.js'></script>
-  <script type='text/javascript' src='js/demo.js'></script-->
-  <script type='text/javascript' src='js/triangulr.js'></script>
-
+	<meta charset="UTF-8" />
+	<title>demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" />
+	<script type='text/javascript' src='js/triangulr.js'></script>
+	<script type='text/javascript' >
+		function open_link(url){
+			if (typeof screen.orientation !== 'undefined') {
+				window.open(url,'','width=600,height=400')
+			}
+		}
+	</script> 
 </head>
 
 <body>
-<div id="wrapper">
+	<div id="wrapper">
+		<div class="ico" onclick="open_link('bio/index.html')">
+		<img src="bio/img/avatar.jpg"/>
+		<label>CV</label>
+		</div>
 
+		<div class="ico"  onclick="open_link('bio-en/index.html')">
+		<img src="bio/img/avatar.jpg"/>
+		<label>CV-english</label>
+		</div>
+		
+		<div id="wallpaper" style="z-index:-1"></div>
 
-
-<a class="ico" href="bio">
-<img src="bio/img/avatar.jpg"/>
-<label>CV</label>
-</a>
-
-
-
-<a class="ico"  href="bio-en">
-<img src="bio/img/avatar.jpg"/>
-<label>CV-english</label>
-</a>
-
-
-
-  <!--div id="intro">
-    <h1>Hello, World</h1>
-	<h2>coming soon...</h2>
-  </div-->
-  <div id="wallpaper" style="z-index:-1"></div>
-    <script type='text/javascript'>
+	</div>
+	<script type='text/javascript'>
 		var currentTime = new Date();
+		var day = 360-(currentTime.getMonth()-1)*30+currentTime.getDate()+120;
+		var filter = "hue-rotate("+day+"deg)";
+				
 		var colorGenerator = function (path) {
-		  var randoma = currentTime.getFullYear()-2000;
-		  var randomb = currentTime.getMonth()*2;
-		  var randomc = currentTime.getDate()*1;
-		  var ratio = (path.x * path.y) / (path.cols * path.lines);
-		  var codea = Math.floor(250 - (ratio * (100-randoma)) - Math.random()*randoma).toString(16);
-		  var codeb = Math.floor(250 - (ratio * (100-randomb)) - Math.random()*randomb).toString(16);
-		  var codec = Math.floor(250 - (ratio * (100-randomc)) - Math.random()*randomc).toString(16);
-		  return '#'+codea+codeb+codec;
+			var random = 16;
+			var ratio = (path.x * path.y) / (path.cols * path.lines);
+			var code = Math.floor(250 - (ratio * (250-random)) - Math.random()*random).toString(16);
+			return '#'+code+code+code;
 		};
 
 		var mySVG = new Triangulr (screen.width, screen.height, 200, 100, colorGenerator);
-		document.getElementById('wallpaper').appendChild(mySVG);
-  </script>
-   </div>
+		var wp = document.getElementById('wallpaper')
+		wp.appendChild(mySVG);
+		wp.style["filter"] = filter;
+	</script>
 </body>
 </html>
