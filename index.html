@@ -5,24 +5,52 @@
   <title>demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css" />
-  <script type='text/javascript' src='./jquery.particleground.js'></script>
-  <script type='text/javascript' src='js/demo.js'></script>
+  <!--script type='text/javascript' src='./jquery.particleground.js'></script>
+  <script type='text/javascript' src='js/demo.js'></script-->
+  <script type='text/javascript' src='js/triangulr.js'></script>
+
 </head>
 
 <body>
+<div id="wrapper">
 
 
-<div id="particles" style="z-index:-1">
 
-</div>
-<div id="particlesx">
+<a class="ico" href="bio">
+<img src="bio/img/avatar.jpg"/>
+<label>CV</label>
+</a>
 
-</div>
 
-  <div id="intro">
+
+<a class="ico"  href="bio-en">
+<img src="bio/img/avatar.jpg"/>
+<label>CV-english</label>
+</a>
+
+
+
+  <!--div id="intro">
     <h1>Hello, World</h1>
 	<h2>coming soon...</h2>
+  </div-->
+  <div id="wallpaper" style="z-index:-1"></div>
+    <script type='text/javascript'>
+		var currentTime = new Date();
+		var colorGenerator = function (path) {
+		  var randoma = currentTime.getFullYear()-2000;
+		  var randomb = currentTime.getMonth()*2;
+		  var randomc = currentTime.getDate()*1;
+		  var ratio = (path.x * path.y) / (path.cols * path.lines);
+		  var codea = Math.floor(250 - (ratio * (100-randoma)) - Math.random()*randoma).toString(16);
+		  var codeb = Math.floor(250 - (ratio * (100-randomb)) - Math.random()*randomb).toString(16);
+		  var codec = Math.floor(250 - (ratio * (100-randomc)) - Math.random()*randomc).toString(16);
+		  return '#'+codea+codeb+codec;
+		};
 
-  </div>
+		var mySVG = new Triangulr (screen.width, screen.height, 200, 100, colorGenerator);
+		document.getElementById('wallpaper').appendChild(mySVG);
+  </script>
+   </div>
 </body>
 </html>

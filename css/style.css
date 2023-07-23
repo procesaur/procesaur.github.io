@@ -71,26 +71,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-body:before{
-	background-image: url('bg2.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-    content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.25;
-}
-
-#particles, #particlesx {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  position: fixed;
-}
 
 #intro {
   position: absolute;
@@ -180,4 +160,51 @@ p {
   h1::after {
     height: 4px;
   }
+}
+
+#wallpaper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 100%;
+}
+
+.ico {
+    z-index: 100;
+	padding:10px;
+	    text-decoration: none;
+    color: black;
+}
+
+
+.ico:hover{
+	background-color: #0014ff0f
+}
+
+.ico img{
+	width:100px;
+
+	
+	padding:0px 10px;
+	cursor:pointer
+}
+
+.ico label{
+	width: 100px;
+    display: flex;
+    padding: 0px 10px;
+    align-content: stretch;
+    justify-content: space-around;
+}
+
+	
+
+
+#wrapper {
+	display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
 }
