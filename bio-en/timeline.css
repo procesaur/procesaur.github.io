@@ -14,7 +14,8 @@ color: #1072ef
 .events time { 
   position: relative;
   padding: 0.2em 1.5em; 
-	    white-space: nowrap;
+  white-space: nowrap;
+  width: 80pt
   }
 
 .events time::after { 
